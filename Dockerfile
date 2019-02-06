@@ -1,7 +1,5 @@
 FROM node:11-alpine AS node
 
-RUN ls -lah /usr/lib/
-
 FROM docker:stable
 
 COPY --from=node /usr/lib/libgcc* /usr/lib/
