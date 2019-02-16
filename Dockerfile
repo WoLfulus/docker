@@ -14,4 +14,4 @@ RUN apk add --no-cache bash openssl git jq curl \
     && wget -O skaffold https://storage.googleapis.com/skaffold/releases/$(wget -qSO- https://api.github.com/repos/GoogleContainerTools/skaffold/releases/latest | jq .tag_name | tr -d "\"")/skaffold-linux-amd64 \
     && chmod +x ./skaffold && mv ./skaffold /usr/bin/skaffold
 
-RUN npm install -g gulp-cli
+RUN npm install -g gulp-cli @reddot/helmet
