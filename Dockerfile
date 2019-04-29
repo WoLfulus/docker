@@ -6,7 +6,7 @@ COPY --from=node /usr/lib/libgcc* /usr/lib/
 COPY --from=node /usr/lib/libstdc++* /usr/lib/
 COPY --from=node /usr/local/ /usr/local/
 
-ENV HELM_VERSION=v2.12.3
+ENV HELM_VERSION=v2.13.1
 ENV KUBECTL_VERSION=v1.13.3
 ENV SKAFFOLD_VERSION=v0.22.0
 
