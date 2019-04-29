@@ -7,7 +7,7 @@ COPY --from=node /usr/lib/libstdc++* /usr/lib/
 COPY --from=node /usr/local/ /usr/local/
 
 ENV HELM_VERSION=v2.13.1
-ENV KUBECTL_VERSION=v1.13.3
+ENV KUBECTL_VERSION=v1.14.1
 ENV SKAFFOLD_VERSION=v0.22.0
 
 RUN apk add --no-cache bash openssl git jq curl \
