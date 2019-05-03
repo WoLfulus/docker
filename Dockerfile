@@ -8,7 +8,7 @@ COPY --from=node /usr/local/ /usr/local/
 
 ENV HELM_VERSION=v2.13.1
 ENV KUBECTL_VERSION=v1.14.1
-ENV SKAFFOLD_VERSION=v0.22.0
+ENV SKAFFOLD_VERSION=v0.28.0
 
 RUN apk add --no-cache bash openssl git jq curl \
     && wget -O /usr/bin/kubectl https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl && chmod +x /usr/bin/kubectl \
